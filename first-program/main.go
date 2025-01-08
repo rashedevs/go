@@ -1,6 +1,7 @@
 package main
 
 import (
+	"first-program/practice"
 	"fmt"
 )
 
@@ -41,4 +42,6 @@ case 2, 3:
 default:
     fmt.Println("a is not 1 or 2")
 }
+
+practice.FullName()
 }
