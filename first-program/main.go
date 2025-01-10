@@ -42,6 +42,8 @@ case 2, 3:
 default:
     fmt.Println("a is not 1 or 2")
 }
+var gunfol  = practice.Gun(30, 30)
+var biyogfol = practice.Biyog(300, 120)
 
-practice.FullName()
+fmt.Print("gun----------", gunfol, "-------biyog--------", biyogfol)
 }
