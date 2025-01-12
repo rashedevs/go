@@ -22,7 +22,7 @@ import (
 func main(){
 
 age :=20
-a :=3
+a :=9
 
 //if-else
 if age >18{
@@ -35,12 +35,14 @@ if age >18{
 
 //switch
 switch a {
-case 1:
-    fmt.Println("a is 1")
-case 2, 3:
-    fmt.Println("a is either 2 or 3")
+case 1, 3, 5:
+    fmt.Println("a is 1 or 3 or 5")
+case 2, 4:
+    fmt.Println("a is either 2 or 4")
+case 6, 7:
+    fmt.Println("a is either 6 or 7")
 default:
-    fmt.Println("a is not 1 or 2")
+    fmt.Println("a is for something else")
 }
 var gunfol  = practice.Gun(30, 30)
 var biyogfol = practice.Biyog(300, 120)
