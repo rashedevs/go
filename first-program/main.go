@@ -93,6 +93,7 @@ func printWelcomeMessage(){
 	fmt.Println("Welcome to my application")
 }
 
+//take input from user
 func getUserName() string { 
 	var userName string
 	fmt.Println("Enter your name: ")
@@ -100,31 +101,35 @@ func getUserName() string {
 	return userName
 }
 
-//take input from user
-func main(){
-// fmt.Println("Welcome to my application")
-printWelcomeMessage()
-
-// var userName string
-// fmt.Println("Enter your name: ")
-// fmt.Scanln(&userName)
-// fmt.Println("your name is -----", userName)
-name := getUserName()
-
-var numOne int
-var numTwo int
-fmt.Println("Enter number one: ")
-fmt.Scanln(&numOne)
-
-fmt.Println("Enter number two: ")
-fmt.Scanln(&numTwo)  //by &numTwo we are assigning numTwo to the variable
-
-sum := add(numOne, numTwo)
-fmt.Println("Hi",name,"Your Sum of two input numbers is: ", sum)
-
-fmt.Println("Thank you for using my application")
-fmt.Println("Good bye")
+func getTwoNumbers() (int, int) {
+	var numOne int
+	var numTwo int
+	fmt.Println("Enter number one: ")
+	fmt.Scanln(&numOne)
+	
+	fmt.Println("Enter number two: ")
+	fmt.Scanln(&numTwo)  //by &numTwo we are assigning numTwo to the variable
+	return numOne, numTwo
 }
 
-// SOLID >>> S = Single Responsibility Principle >>> will apply to upper main function
+func display(name string, sum int) {
+	fmt.Println("Hi",name,"!","Sum of two input numbers is: ", sum)
+}
+
+func printGoodbyeMessage() {
+	fmt.Println("Thank you for using my application")
+    fmt.Println("Good bye")
+}
+
+
+func main(){
+// SOLID >>> S = Single Responsibility Principle >>> will apply to main function
+printWelcomeMessage()
+name := getUserName()
+n1,n2 := getTwoNumbers()
+sum := add(n1, n2)
+display(name, sum)
+printGoodbyeMessage()
+}
+
 
