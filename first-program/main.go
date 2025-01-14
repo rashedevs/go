@@ -25,22 +25,22 @@ func add(num1 int, num2 int) int {
 	return sum
 }
 
-func allOps(num1 int, num2 int) (int, int) {
-	sum := num1 + num2
-	mul := num1 * num2
-	// fmt.Println("Sum of", num1, "and", num2, "is", sum)
-	return sum, mul
-}
+// func allOps(num1 int, num2 int) (int, int) {
+// 	sum := num1 + num2
+// 	mul := num1 * num2
+// 	// fmt.Println("Sum of", num1, "and", num2, "is", sum)
+// 	return sum, mul
+// }
 
-func myFunction(x int, y string) (result int, txt1 string) {
-	result = x + x
-	txt1 = y + " World!"
-	return
-  }
+// func myFunction(x int, y string) (result int, txt1 string) {
+// 	result = x + x
+// 	txt1 = y + " World!"
+// 	return
+//   }
 
 
 //if-else or switch................................................................
-func main(){
+// func main(){
 
 // age :=20
 // a :=9
@@ -87,16 +87,29 @@ func main(){
 // fmt.Println(d,e)
 // fmt.Println(z)
 
+//applying S of SOLID................................
 
+func printWelcomeMessage(){
+	fmt.Println("Welcome to my application")
+}
+
+func getUserName() string { 
+	var userName string
+	fmt.Println("Enter your name: ")
+	fmt.Scanln(&userName)
+	return userName
+}
 
 //take input from user
-fmt.Println("Welcome to my application")
+func main(){
+// fmt.Println("Welcome to my application")
+printWelcomeMessage()
 
-
-var userName string
-fmt.Println("Enter your name: ")
-fmt.Scanln(&userName)
-fmt.Println("your name is -----", userName)
+// var userName string
+// fmt.Println("Enter your name: ")
+// fmt.Scanln(&userName)
+// fmt.Println("your name is -----", userName)
+name := getUserName()
 
 var numOne int
 var numTwo int
@@ -107,10 +120,11 @@ fmt.Println("Enter number two: ")
 fmt.Scanln(&numTwo)  //by &numTwo we are assigning numTwo to the variable
 
 sum := add(numOne, numTwo)
-fmt.Println("Hi",userName,"Your Sum of two input numbers is: ", sum)
+fmt.Println("Hi",name,"Your Sum of two input numbers is: ", sum)
 
 fmt.Println("Thank you for using my application")
 fmt.Println("Good bye")
-
-
 }
+
+// SOLID >>> S = Single Responsibility Principle >>> will apply to upper main function
+
