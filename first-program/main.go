@@ -121,6 +121,14 @@ func printGoodbyeMessage() {
     fmt.Println("Good bye")
 }
 
+//recursion
+func testcount(x int) int {
+	if x == 11 {
+	  return 0
+	}
+	fmt.Println(x)
+	return testcount(x + 1)
+  }
 
 func main(){
 // SOLID >>> S = Single Responsibility Principle >>> will apply to main function
@@ -130,6 +138,9 @@ n1,n2 := getTwoNumbers()
 sum := add(n1, n2)
 display(name, sum)
 printGoodbyeMessage()
+
+testcount(5)
+
 }
 
 
