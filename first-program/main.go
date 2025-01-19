@@ -140,24 +140,32 @@ import (
 
 //class - 14 >>> scope
 
+// var a = 20
+// var b = 30
+// func add(x int , y int){
+// 	z := x + y
+// 	fmt.Println(z)
+// }
+// func main() {
+// 	p := 30
+// 	q := 40
+// 	add(p, q)
+// 	add(a, b)
+// 	add(a, p)
+
+// 	// add(b, z)
+// }
+
+//class -15 >>> local scope for if-else, function, switch
+
 var a = 20
 var b = 30
-
-func add(x int , y int){
-	z := x + y
-	fmt.Println(z)
-}
 func main() {
-	p := 30
-	q := 40
-	add(p, q)
-
-	add(a, b)
-
-	add(a, p)
-
-	// add(b, z)
-
+	x := 20
+	if x >= 18 {
+		p := 10
+        fmt.Println("I am adult")
+		fmt.Println("I have", p , "girlfriend")
+    }
+	// fmt.Println("hi", p)
 }
-
-
