@@ -160,6 +160,11 @@ import (
 
 var a = 20
 var b = 30
+
+func add(a, b int) int {
+    result := a + b // Local to the `add` function
+    return result
+}
 func main() {
 	x := 20
 	if x >= 18 {
@@ -168,4 +173,49 @@ func main() {
 		fmt.Println("I have", p , "girlfriend")
     }
 	// fmt.Println("hi", p)
+
+
+
+// more examples for if-else, function, switch
+//>> 1. if-else................................................................
+if true {
+	x := 10 // Local to this `if` block
+	fmt.Println("x in if block:", x)
+}
+// fmt.Println("x outside if block:", x) // Error: x is not accessible here
+
+if false {
+	y := 20 // Local to this `if` block
+	fmt.Println("y in if block:", y)
+} else {
+	z := 30 // Local to this `else` block
+	fmt.Println("z in else block:", z)
+}
+// fmt.Println("z outside else block:", z) // Error: z is not accessible
+
+
+//>> 2. function................................................................
+
+sum := add(5, 7)
+    fmt.Println("Sum:", sum)
+    // fmt.Println(result) // Error: `result` is not accessible in `main`
+
+
+//>> 3. switch................................................................
+
+num := 2
+
+switch num {
+case 1:
+	x := "One" // Local to this `case`
+	fmt.Println(x)
+case 2:
+	y := "Two" // Local to this `case`
+	fmt.Println(y)
+default:
+	z := "Unknown" // Local to the `default` case
+	fmt.Println(z)
+}
+
+// fmt.Println(x, y, z) // Error: x, y, z are not accessible outside `switch`
 }
