@@ -219,3 +219,46 @@ default:
 
 // fmt.Println(x, y, z) // Error: x, y, z are not accessible outside `switch`
 }
+
+
+//..................................NOTE..............................
+/* 
+
+1. What is Package Scope in Go?
+
+In Go, package scope means that any variable, constant, function, or type declared
+at the top level of a file is accessible throughout the same package.
+
+- These items can be shared among all files in the same package.
+
+- To make items available outside the package,
+  their names must start with an uppercase letter (exported).
+
+Key Characteristics of Package Scope:
+
+- Items declared at the top level of a file are available throughout the entire package.
+- Only exported items (uppercase names) can be accessed outside the package.
+
+2. Why Go Doesn't Have True Global Scope ?
+
+  Go avoids true global variables (accessible everywhere across all packages)
+  to encourage modularity and prevent name clashes. Instead, Go uses:
+
+  A. Package Scope: For sharing data across the same package.
+  B. Exported Items: For sharing specific data/functions across packages.
+
+In other languages, a global variable might be accessible everywhere. 
+In Go, such variables would be scoped to a package and need to be explicitly exported.
+
+
+## Key Takeaways
+
+- Package scope is Go's way of creating "global" variables but limits them
+  to the package's boundary.
+
+- There are no "true global" variables accessible across all packages in Go.
+
+- This design enforces encapsulation, modularity, and minimizes
+  unintended interference between packages.
+
+*/
