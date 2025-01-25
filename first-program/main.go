@@ -13,7 +13,8 @@ func main() {
 fmt.Println("Starting....")
 
 res := mathlib.Summation(c , d)
+jogfol := jog(c, d)
 
-fmt.Println("Result is from another package", res)
+fmt.Println("Result is from another package and parallel packages are", res, "and", jogfol)
 
 }

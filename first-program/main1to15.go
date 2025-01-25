@@ -229,6 +229,8 @@ default:
 In Go, package scope means that any variable, constant, function, or type declared
 at the top level of a file is accessible throughout the same package.
 
+- Each folder should contain same package and parallel file should contain same package.
+
 - These items can be shared among all files in the same package.
 
 - To make items available outside the package,
