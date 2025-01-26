@@ -2,19 +2,40 @@ package main
 
 import (
 	"fmt"
-
-	"example.com/mathlib"
+	// "example.com/mathlib"
 )
 
-var c = 40
-var d = 20
-func main() {
+//---------------------------------------for class 16
 
-fmt.Println("Starting....")
+// var c = 40
+// var d = 20
+// func main() {
 
-res := mathlib.Summation(c , d)
-jogfol := jog(c, d)
+// fmt.Println("Starting....")
 
-fmt.Println("Result is from another package and parallel packages are", res, "and", jogfol)
+// res := mathlib.Summation(c , d)
+// jogfol := jog(c, d)
 
+// fmt.Println("Result is from another package and parallel packages are", res, "and", jogfol)
+
+// }
+
+// --------------------------------------for class 17
+
+
+var (
+	a1=20
+	b1=30
+)
+
+func printNum(n int) {
+	fmt.Println("Number is:", n)
+}
+
+func add1(x int, y int) {
+    res1 := x + y
+    printNum(res1)
+}
+func main(){
+	add(a1, b1)
 }
