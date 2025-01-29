@@ -43,11 +43,39 @@ import (
 // --------------------------------------for class 18
 // variable shadowing.................................
 
-func main() {
-	x := 20
-    if x > 18 {
-        x := 10
-        fmt.Println("Local x is after redeclared:", x)   // print 10
-    }
-    fmt.Println("Global x is:", x)                       // print 20
+// func main() {
+// 	x := 20
+//     if x > 18 {
+//         x := 10
+//         fmt.Println("Local x is after redeclared:", x)   // print 10
+//     }
+//     fmt.Println("Global x is:", x)                       // print 20
+// }
+
+//--------------------------------------for class 19
+// standard or named functions --------------------------------
+
+var boyos = 30
+
+//standard function
+func mul(x int, y int) int {
+    return x * y
 }
+
+func main() {
+    fmt.Println("Result is:", mul(10, 20))
+    fmt.Println("Now boyos is:", boyos)
+}
+
+//--------------------------------------for class 20
+// init function - (we cant call this, computer calls it automatically)
+// no arguments - no return
+// It runs automatically before the main function (main) or any other functions in the package.
+// init functions in imported packages are executed before the init function in the main package.
+// A single package can have multiple init functions, even in different files within the same package. 
+
+func init(){
+fmt.Println("I am the init function and will be executed first-- boyos silo", boyos);
+boyos = 31
+}
+
