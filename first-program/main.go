@@ -79,3 +79,14 @@ fmt.Println("I am the init function and will be executed first-- boyos silo", bo
 boyos = 31
 }
 
+
+// ----------------------------------------class 21--------------------------------
+//--------------------------------------anonymous function-------------------------
+
+// An anonymous function in Go is a function without a name. It can be assigned to a variable,
+//used as an inline function, or passed as an argument to another function.
+
+//       func(parameters) returnType {
+           // Function body
+//       }
+
