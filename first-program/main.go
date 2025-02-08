@@ -88,17 +88,20 @@ import (
 // viva topic (anonymous function / expression / iiFE / invoke)
 
 var m = 33 // an expression
-var n = 34 // another expression
+var n = 34// another expression
 
+func sum(){
+    addition(20,30)
+}
 
 func addition(x , y int){   //an expression can be a var, a function and if/else statement with block
     fmt.Println("Result is:", x + y)
 }
-func main() {
 
-    
+func main() {
     fmt.Println("I am the main function.")
-    addition(m, n)
+
+    sum()
     //anonymous function with iife
     func (c int, d int){ // anonymous function expression
         res := c * d
