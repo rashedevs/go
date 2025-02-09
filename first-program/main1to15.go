@@ -161,7 +161,7 @@ import (
 var a = 20
 var b = 30
 
-func add(a, b int) int {
+func add1to15(a, b int) int {
     result := a + b // Local to the `add` function
     return result
 }
@@ -196,7 +196,7 @@ if false {
 
 //>> 2. function................................................................
 
-sum := add(5, 7)
+sum := add1to15(5, 7)
     fmt.Println("Sum:", sum)
     // fmt.Println(result) // Error: `result` is not accessible in `main`
 

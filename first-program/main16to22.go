@@ -87,59 +87,56 @@ import (
 
 // viva topic (anonymous function / expression / iiFE / invoke)
 
-var m = 33 // an expression
-var n = 34// another expression
+// var m = 33 // an expression
+// var n = 34// another expression
 
-func sum(){
-    addition(20,30)
-}
+// func sum(){
+//     addition(20,30)
+// }
 
-func addition(x , y int){   //an expression can be a var, a function and if/else statement with block
-    fmt.Println("Result is:", x + y)
-}
+// func addition(x , y int){   //an expression can be a var, a function and if/else statement with block
+//     fmt.Println("Result is:", x + y)
+// }
 
-func main() {
-    fmt.Println("I am the main function.")
+// func main16to22() {
+//     fmt.Println("I am the main function.")
 
-    sum()
-    //anonymous function with iife
-    func (c int, d int){ // anonymous function expression
-        res := c * d
-        fmt.Println("Multiplication result is:", res)
-    }(20 , 40) // immediately invoked (called)
-
-
+//     sum()
+//     //anonymous function with iife
+//     func (c int, d int){ // anonymous function expression
+//         res := c * d
+//         fmt.Println("Multiplication result is:", res)
+//     }(20 , 40) // immediately invoked (called)
 
 // ------------------------------------------------------clss 22------------------------------------------
 // --------------------------------------function expression or assign function in variable--------------------------
-       
+
 //................................................................................................................................
-    // Gives error bcoz
-    // You can define a function inside main, but it must be an anonymous function 
-    // assigned to a variable or invoked immediately.
-    // However, you cannot define a named function (func sum(...) {}) inside main
-    // because Go does not allow function declarations inside other functions.
+// Gives error bcoz
+// You can define a function inside main, but it must be an anonymous function
+// assigned to a variable or invoked immediately.
+// However, you cannot define a named function (func sum(...) {}) inside main
+// because Go does not allow function declarations inside other functions.
 
-    // func sum (x, y int){
-    //     fmt.Println("Sum is:", x + y)
-    // }
-    // sum(30,40)
+// func sum (x, y int){
+//     fmt.Println("Sum is:", x + y)
+// }
+// sum(30,40)
 
-// Points to be Noted: 
+// Points to be Noted:
 
 // ✅ Named functions must be declared at the package level (outside main).
 // ✅ Anonymous functions can be used inside main, either by assigning them to a variable or using IIFE.
 // ❌ You cannot declare a named function inside main or any other function.
 //------------------------------------------------------------------------------------------------------------------------------------
 
+// div(m, n)   // gives undefined
+//     div := func(f, g int){
+//         fmt.Println(f/g)
+//     }
 
-    // div(m, n)   // gives undefined
-    div := func(f, g int){
-        fmt.Println(f/g)
-    }
-
-    div(40, 20)
-}
+//     div(40, 20)
+// }
 
 func init(){
 fmt.Println("I am the init function and will be executed first--")
