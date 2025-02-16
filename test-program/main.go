@@ -10,20 +10,24 @@
 // like this: go run main.go add.go
 
 // practice test
+// summation of nth number
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
-
-func EvenOrOdd(x int){
-    if x % 2 == 0{
-        fmt.Println("EVEN")
-    }else{
-        fmt.Println("ODD")
-    }
-
+func Sum(x int) int {
+    sum := x*(x+1)/2
+    return sum
 }
 
-func main(){
-    EvenOrOdd(66)
+func main() {
+    x := 100
+    start := time.Now()
+    result := Sum(x)
+    elapsed := time.Since(start)
+    fmt.Println("Sum of first", x, "numbers:", result)
+    fmt.Println("Execution Time:", elapsed)
 }
