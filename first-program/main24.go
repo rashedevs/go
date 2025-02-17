@@ -12,7 +12,7 @@ package main
 //     the values of variables that are created at compile time.
 
 //---- Stack Frame: A stack frame is a block of memory that is used to store
-//---- the values of variables that are created at runtime.
+//---- the values of variables that are created at runtime. Stack frames are dynamic in size.
 
 // 4. Heap: The heap is used to store the values of variables that are created at runtime.
 
