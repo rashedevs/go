@@ -21,3 +21,34 @@ package main
 // -----Go uses a garbage collector to manage memory.
 // -----The garbage collector is responsible for freeing memory that is no longer in use.
 // -----The garbage collector runs in the background.
+
+//example.....................
+
+import "fmt"
+
+// Global variable (Data Segment)
+var globalVar int = 10
+
+// Global constant (Data Segment or Code Segment, depending on usage)
+const globalConst = 100
+
+func main() {
+    // Local variable (Stack)
+    localVar := 5
+
+    // Local constant (Stack or Code Segment, optimized by compiler)
+    const localConst = 50
+
+    fmt.Println("Global Variable:", globalVar)
+    fmt.Println("Global Constant:", globalConst)
+    fmt.Println("Local Variable:", localVar)
+    fmt.Println("Local Constant:", localConst)
+
+    // Inner function (Code Segment, stack frame access)
+    innerFunction := func() {
+        innerVar := localVar + localConst // Stored in the stack
+        fmt.Println("Inner Variable:", innerVar)
+    }
+
+    innerFunction() // Creates a stack frame for this function call
+}
