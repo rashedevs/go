@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // Go internal memory usage.
 
 // Memory (RAM) Partioning:
@@ -24,31 +26,31 @@ package main
 
 //example.....................
 
-import "fmt"
 
-// Global variable (Data Segment)
-var globalVar int = 10
+const a = 10
+var p = 100
 
-// Global constant (Data Segment or Code Segment, depending on usage)
-const globalConst = 100
-
-func main() {
-    // Local variable (Stack)
-    localVar := 5
-
-    // Local constant (Stack or Code Segment, optimized by compiler)
-    const localConst = 50
-
-    fmt.Println("Global Variable:", globalVar)
-    fmt.Println("Global Constant:", globalConst)
-    fmt.Println("Local Variable:", localVar)
-    fmt.Println("Local Constant:", localConst)
-
-    // Inner function (Code Segment, stack frame access)
-    innerFunction := func() {
-        innerVar := localVar + localConst // Stored in the stack
-        fmt.Println("Inner Variable:", innerVar)
+func call(){
+    add := func(x int, y int){
+        z := x + y
+        fmt.Println(z)
     }
 
-    innerFunction() // Creates a stack frame for this function call
+    add(5, 6)
+    add(p, a)
+}
+
+func main(){
+    call()
+    fmt.Println("global", a)  // global const 10
+    a := 20
+    fmt.Println("redeclare with shadow", a) //local redeclare with shadow 20
+    a, b := 30, 40
+    fmt.Println("redeclare with a shadow and b new declaration", a, b) //local shadow with :=, with new var b declaration
+    a = 30
+    fmt.Println("reassign", a) // reassign to local shadowed 30
+}
+
+func init(){
+    fmt.Println("Hello, init")
 }

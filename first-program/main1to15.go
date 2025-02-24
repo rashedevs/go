@@ -1,8 +1,8 @@
 package main
 
-import (
-	"fmt"
-)
+// import (
+// 	"fmt"
+// )
 
 // "first-program/practice"
 //variable................................................................
@@ -158,71 +158,66 @@ import (
 
 //class -15 >>> local scope for if-else, function, switch
 
-var a = 20
-var b = 30
+// var a = 20
+// var b = 30
 
-func add1to15(a, b int) int {
-    result := a + b // Local to the `add` function
-    return result
-}
-func main1to15() {
-	x := 20
-	if x >= 18 {
-		p := 10
-        fmt.Println("I am adult")
-		fmt.Println("I have", p , "girlfriend")
-    }
-	// fmt.Println("hi", p)
+// func add1to15(a, b int) int {
+//     result := a + b // Local to the `add` function
+//     return result
+// }
+// func main1to15() {
+// 	x := 20
+// 	if x >= 18 {
+// 		p := 10
+//         fmt.Println("I am adult")
+// 		fmt.Println("I have", p , "girlfriend")
+//     }
+// 	// fmt.Println("hi", p)
 
+// // more examples for if-else, function, switch
+// //>> 1. if-else................................................................
+// if true {
+// 	x := 10 // Local to this `if` block
+// 	fmt.Println("x in if block:", x)
+// }
+// // fmt.Println("x outside if block:", x) // Error: x is not accessible here
 
+// if false {
+// 	y := 20 // Local to this `if` block
+// 	fmt.Println("y in if block:", y)
+// } else {
+// 	z := 30 // Local to this `else` block
+// 	fmt.Println("z in else block:", z)
+// }
+// // fmt.Println("z outside else block:", z) // Error: z is not accessible
 
-// more examples for if-else, function, switch
-//>> 1. if-else................................................................
-if true {
-	x := 10 // Local to this `if` block
-	fmt.Println("x in if block:", x)
-}
-// fmt.Println("x outside if block:", x) // Error: x is not accessible here
+// //>> 2. function................................................................
 
-if false {
-	y := 20 // Local to this `if` block
-	fmt.Println("y in if block:", y)
-} else {
-	z := 30 // Local to this `else` block
-	fmt.Println("z in else block:", z)
-}
-// fmt.Println("z outside else block:", z) // Error: z is not accessible
+// sum := add1to15(5, 7)
+//     fmt.Println("Sum:", sum)
+//     // fmt.Println(result) // Error: `result` is not accessible in `main`
 
+// //>> 3. switch................................................................
 
-//>> 2. function................................................................
+// num := 2
 
-sum := add1to15(5, 7)
-    fmt.Println("Sum:", sum)
-    // fmt.Println(result) // Error: `result` is not accessible in `main`
+// switch num {
+// case 1:
+// 	x := "One" // Local to this `case`
+// 	fmt.Println(x)
+// case 2:
+// 	y := "Two" // Local to this `case`
+// 	fmt.Println(y)
+// default:
+// 	z := "Unknown" // Local to the `default` case
+// 	fmt.Println(z)
+// }
 
-
-//>> 3. switch................................................................
-
-num := 2
-
-switch num {
-case 1:
-	x := "One" // Local to this `case`
-	fmt.Println(x)
-case 2:
-	y := "Two" // Local to this `case`
-	fmt.Println(y)
-default:
-	z := "Unknown" // Local to the `default` case
-	fmt.Println(z)
-}
-
-// fmt.Println(x, y, z) // Error: x, y, z are not accessible outside `switch`
-}
-
+// // fmt.Println(x, y, z) // Error: x, y, z are not accessible outside `switch`
+// }
 
 //..................................NOTE..............................
-/* 
+/*
 
 1. What is Package Scope in Go?
 
@@ -249,7 +244,7 @@ Key Characteristics of Package Scope:
   A. Package Scope: For sharing data across the same package.
   B. Exported Items: For sharing specific data/functions across packages.
 
-In other languages, a global variable might be accessible everywhere. 
+In other languages, a global variable might be accessible everywhere.
 In Go, such variables would be scoped to a package and need to be explicitly exported.
 
 

@@ -1,9 +1,7 @@
 package main
 
-import (
-	"fmt"
-	// "example.com/mathlib"
-)
+// "fmt"
+// "example.com/mathlib"
 
 //---------------------------------------for class 16
 
@@ -138,7 +136,7 @@ import (
 //     div(40, 20)
 // }
 
-func init(){
-fmt.Println("I am the init function and will be executed first--")
-}
+// func init(){
+// fmt.Println("I am the init function and will be executed first--")
+// }
 
