@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+// package main
 
 // Go internal memory usage.
 
@@ -26,31 +24,34 @@ import "fmt"
 
 //example.....................
 
+// const a = 10
+// var p = 100
 
-const a = 10
-var p = 100
+// func call(){
+//     add := func(x int, y int){
+//         z := x + y
+//         fmt.Println(z)
+//     }
 
-func call(){
-    add := func(x int, y int){
-        z := x + y
-        fmt.Println(z)
-    }
+//     add(5, 6)
+//     add(p, a)
+// }
 
-    add(5, 6)
-    add(p, a)
-}
+// func main(){
+//     call()
+//     fmt.Println("global", a)  // global const 10
+//     a := 20
+//     fmt.Println("redeclare with shadow", a) //local redeclare with shadow 20
+//     a, b := 30, 40
+//     fmt.Println("redeclare with a shadow and b new declaration", a, b) //local shadow with :=, with new var b declaration
+//     a = 30
+//     fmt.Println("reassign", a) // reassign to local shadowed 30
+// }
 
-func main(){
-    call()
-    fmt.Println("global", a)  // global const 10
-    a := 20
-    fmt.Println("redeclare with shadow", a) //local redeclare with shadow 20
-    a, b := 30, 40
-    fmt.Println("redeclare with a shadow and b new declaration", a, b) //local shadow with :=, with new var b declaration
-    a = 30
-    fmt.Println("reassign", a) // reassign to local shadowed 30
-}
+// func init(){
+//     fmt.Println("Hello, init")
+// }
 
-func init(){
-    fmt.Println("Hello, init")
-}
+
+
+
