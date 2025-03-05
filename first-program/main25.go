@@ -33,7 +33,7 @@ func call (){
 }
 
 func main(){
-	fmt.Println("p", p)
+	fmt.Println("printing....", p)
 	call()	
 }
 
