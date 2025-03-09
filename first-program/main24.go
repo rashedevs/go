@@ -1,4 +1,6 @@
-// package main
+package main
+
+import "fmt"
 
 // Go internal memory usage.
 
@@ -48,10 +50,6 @@
 //     fmt.Println("reassign", a) // reassign to local shadowed 30
 // }
 
-// func init(){
-//     fmt.Println("Hello, init")
-// }
-
-
-
-
+func init(){
+    fmt.Println("Hello, init")
+}
