@@ -7,40 +7,43 @@ A struct in Go is a way to group related data together.
 It acts like a custom data type that holds multiple property of different types under one name.
 */
 
-type User struct{
-	Name string
-	Age int
-}
+// type User struct{
+// 	Name string
+// 	Age int
+// }
 
-func main() {
+// func main() {
 
-var user1 User
+// var user1 User
 
 //Instantiate means creating an instance of something, usually an object or a struct in programming.
 // user1 is an instance of the User struct
 
 // Instantiating (creating) a struct/object
 
-user1 = User{
-	Name: "rashed",      // called property or field or member-variable.
-	Age: 31,
-}
+// user1 = User{
+// 	Name: "rashed",      // called property or field or member-variable.
+// 	Age: 31,
+// }
 
-fmt.Println("Name-1:", user1.Name)
-fmt.Println("Age-1:", user1.Age)
+// fmt.Println("Name-1:", user1.Name)
+// fmt.Println("Age-1:", user1.Age)
 
 // Instantiating (creating) another struct/object
 
-user2 := User{          // called instance or object. ----(while we use a custom type and                            
-	Name: "uzzaman",    // assign value to it, it is called instance or object)
-	Age: 32,
+// user2 := User{          // called instance or object. ----(while we use a custom type and
+// 	Name: "uzzaman",    // assign value to it, it is called instance or object)
+// 	Age: 32,
+// }
+
+// fmt.Println("Name-2:", user2.Name)
+// fmt.Println("Age-2:", user2.Age)
+
+// }
+
+func init() {	
+	fmt.Println("Hi, Struct")
 }
-
-fmt.Println("Name-2:", user2.Name)
-fmt.Println("Age-2:", user2.Age)
-
-}
-
 
 /*
 In Go, a struct is a composite data type that groups together variables under a single name.
