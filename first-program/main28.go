@@ -8,7 +8,15 @@ type User struct{
 	Age int
 }
 
-func printUserDetails(usr User){
+// normal function to print user details
+
+// func printUserDetails(usr User){
+// 	fmt.Println("Name:", usr.Name)
+// 	fmt.Println("Age:", usr.Age)
+// }
+
+
+func (usr User) printUserDetails(otherParam string){
 	fmt.Println("Name:", usr.Name)
 	fmt.Println("Age:", usr.Age)
 }
@@ -22,14 +30,15 @@ user1 = User{
 	Age: 31,
 }
 
-printUserDetails(user1)
-
+// printUserDetails(user1)
+user1.printUserDetails("Hello, i am a parameter for receiver function")
 
 user2 := User{                                     
 	Name: "uzzaman",    
 	Age: 32,
 }
 
-printUserDetails(user2)
+// printUserDetails(user2)
+user2.printUserDetails("Hello, i am a parameter for receiver function")
 
 }
