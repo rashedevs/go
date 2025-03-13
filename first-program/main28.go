@@ -4,7 +4,7 @@ import "fmt"
 
 
 type User struct{
-	Name string
+	Name string                 //member variable or property
 	Age int
 }
 
@@ -15,12 +15,18 @@ type User struct{
 // 	fmt.Println("Age:", usr.Age)
 // }
 
-
-func (usr User) printUserDetails(otherParam string){
+// receiver function is a function that is associated with a type
+func (usr User) printDetails(otherParam string){
+	fmt.Println(otherParam)
 	fmt.Println("Name:", usr.Name)
 	fmt.Println("Age:", usr.Age)
 }
 
+func (usr User) call(a int){
+	fmt.Println("Amar jonmo", a)
+	fmt.Println("Name:", usr.Name)
+	fmt.Println("Age:", usr.Age)
+}
 
 func main() {
 
@@ -31,7 +37,7 @@ user1 = User{
 }
 
 // printUserDetails(user1)
-user1.printUserDetails("Hello, i am a parameter for receiver function")
+user1.printDetails("Hello, I am a parameter for receiver function for user1 instance")
 
 user2 := User{                                     
 	Name: "uzzaman",    
@@ -39,6 +45,8 @@ user2 := User{
 }
 
 // printUserDetails(user2)
-user2.printUserDetails("Hello, i am a parameter for receiver function")
+user2.printDetails("Hello, I am a parameter for receiver function for user2 instance")
+
+user2.call(1994)
 
 }
