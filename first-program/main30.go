@@ -1,8 +1,9 @@
-// pointer
 package main
 
 import "fmt"
 
-func init(){
-	fmt.Println("hi this is pointer")
+func main(){
+	// pointer or address of memory (ram)
+	x := 28
+	fmt.Println(x)
 }
