@@ -11,4 +11,5 @@ func main(){
 	fmt.Println("p holds the address of x variable =", p)
 	fmt.Println("value (of x) at the p address =", *p)   // * => value at address
 	fmt.Println("in short",*&x)
+	fmt.Println("ok")
 }
