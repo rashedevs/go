@@ -38,4 +38,5 @@ func main(){
 	// fmt.Println(q.Name)
 
 	user1.display()
+	// why we pass the whole struct, not with ampersand & for struct instance.?
 }
