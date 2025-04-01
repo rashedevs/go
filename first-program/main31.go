@@ -1,3 +1,3 @@
 package main
 
-// will explore slice
+// will explore slice today
