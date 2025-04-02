@@ -9,7 +9,7 @@ var arr2 = [3]string{"I","love","you."}
 
 // 	var arr1 [2]int
 // 	arr1[0]=3
-//     arr1[1]=6
+//  arr1[1]=6
 	
 
 // 	//short array declare
