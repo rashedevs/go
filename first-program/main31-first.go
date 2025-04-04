@@ -19,7 +19,7 @@ import "fmt"
 // 	fmt.Println(cap(s1))
 
 // 	// 3. Defining a new slice with slice literal
-// 	slice := []int{1,2,5}     // slice literal - (an array without size)
+// 	slice := []int{1,2,5}     // slice literal
 // 	fmt.Println("slice",slice,"len",len(slice),"cap",cap(slice))
 
 // 	// 4. Using make function with length - (default capacity will be same as length)
