@@ -62,7 +62,7 @@ func main(){
 // a function that can receives unknown amount of same type params
 // we can't use a normal function bcoz there will be fixed number of predefined params
 
-func printLotsNumbers(numbers ...int){  // numbers are recieved as a slice
+func printLotsNumbers(numbers ...int){  // numbers will be recieved as a slice
 	fmt.Println(numbers)
 	fmt.Println(len(numbers))
 	fmt.Println(cap(numbers))
