@@ -33,3 +33,14 @@ modify(data)
 // func init(){
 // 	fmt.Println("testing...")
 // }
+
+
+// sl := make([]int, 3, 5)
+// sl[0]=5
+// sl[1]=15
+// sl[2]=25
+// sl[3]=35   // >>> runtime err but append works why?
+
+// sl = append(sl, 35)
+
+
