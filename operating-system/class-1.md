@@ -1,10 +1,12 @@
 # COMPUTER ARCHITECTURE
 
-- Welheim libson - binary number system inventor at 1645
+- BC 2700 - abacus
+
+- Gottfried Wilhelm Leibniz - binary number system inventor at 1645
 
 - Charles Babbage - father of computer - theoritical concept of first analytical computer 1830.
 
-- Punch card - (1 card for 1 instruction only, 5 rows and 80 columns)
+- Punch card - (1 card for 1 instruction only, 12 rows and 80 columns)
 
 - Ada lovelace - First programmer who wrote the algorithm to calculate Bernaulli's number at 1843.
 
