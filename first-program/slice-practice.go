@@ -28,3 +28,15 @@ func main() {
 	s = append(s, 30)
 	fmt.Println("s after append", &s[0])
 }
+
+//1024 er pore 25% - 50% capacity increase hoite pare.
+// func main() {
+//     s := make([]int, 1024)
+//     fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
+//     s = append(s, 1)
+//     fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
+// }
+
+// output:
+// len: 1024, cap: 1024
+// len: 1025, cap: 1536
