@@ -8,15 +8,15 @@ import "fmt"
 // 	fmt.Printf("[addElement] after append addr of s[0]: %p\n", &s[0])
 // 	return s
 // }
-var y = 665  
+
 func main() {
+// variable shadowing
 var x = 5  
 fmt.Println(x)
 
 {
 	x := 10
 fmt.Println(x)
-fmt.Println(y)
 
 }
 fmt.Println(x)
