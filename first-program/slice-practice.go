@@ -9,26 +9,26 @@ import "fmt"
 // 	return s
 // }
 
-func main() {
-// variable shadowing
-var x = 5  
-fmt.Println(x)
-
-{
-	x := 10
-fmt.Println(x)
-
-}
-fmt.Println(x)
-}
-
-//1024 er pore 25% - 50% capacity increase hoite pare.
 // func main() {
-//     s := make([]int, 1024)
-//     fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
-//     s = append(s, 1)
-//     fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
+// // variable shadowing
+// var x = 5
+// fmt.Println(x)
+
+// {
+// 	x := 10
+// fmt.Println(x)
+
 // }
+// fmt.Println(x)
+// }
+
+// 1024 er pore 25% - 50% capacity increase hoite pare.
+func main() {
+    s := make([]int, 1024)
+    fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
+    s = append(s, 1)
+    fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
+}
 
 // output:
 // len: 1024, cap: 1024
