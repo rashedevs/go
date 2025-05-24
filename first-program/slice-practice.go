@@ -23,13 +23,26 @@ import "fmt"
 // }
 
 // 1024 er pore 25% - 50% capacity increase hoite pare.
-func main() {
-    s := make([]int, 1024)
-    fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
-    s = append(s, 1)
-    fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
-}
+// func main() {
+//     s := make([]int, 1024)
+//     fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
+//     s = append(s, 1)
+//     fmt.Printf("len: %d, cap: %d\n", len(s), cap(s))
+// }
 
 // output:
 // len: 1024, cap: 1024
 // len: 1025, cap: 1536
+
+func main() {
+	a := []int{1, 2, 3, 4, 5}
+	b := a[:3]
+	c := a[1:4]
+
+	b[2] = 99
+	c[1] = 88
+
+	fmt.Println("a:", a)
+	fmt.Println("b:", b)
+	fmt.Println("c:", c)
+}
