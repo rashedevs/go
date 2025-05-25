@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // func addElement(s []int, value int) []int {
 // 	fmt.Printf("[addElement] addr of s[0]: %p\n", &s[0])
 // 	s = append(s, value)
@@ -34,15 +32,12 @@ import "fmt"
 // len: 1024, cap: 1024
 // len: 1025, cap: 1536
 
-func main() {
-	a := []int{1, 2, 3, 4, 5}
-	b := a[:3]
-	c := a[1:4]
+// func main() {
+// var i uint8 = 255
+// i += 10
+// fmt.Println(i)
 
-	b[2] = 99
-	c[1] = 88
-
-	fmt.Println("a:", a)
-	fmt.Println("b:", b)
-	fmt.Println("c:", c)
-}
+// var i int8 = 120
+// i += 16
+// fmt.Println(i)
+// }
