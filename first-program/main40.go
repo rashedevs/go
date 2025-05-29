@@ -1,3 +1,0 @@
-package main
-
-// vogus data types........
