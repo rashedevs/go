@@ -30,9 +30,15 @@ import "fmt"
 // modify(data)
 // }
 
-func init(){
-	fmt.Println("testing...")
+
+
+func main() {
+	a := 6*2
+	a++
+	var b bool = len("Hello, গো") == a
+	fmt.Println(b)
 }
+
 
 
 // sl := make([]int, 3, 5)
@@ -44,3 +50,6 @@ func init(){
 // sl = append(sl, 35)
 
 
+func init(){
+	fmt.Println("testing...")
+}
