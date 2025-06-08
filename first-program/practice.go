@@ -30,16 +30,12 @@ import "fmt"
 // modify(data)
 // }
 
-
-
-func main() {
-	a := 6*2
-	a++
-	var b bool = len("Hello, গো") == a
-	fmt.Println(b)
-}
-
-
+// func main() {
+// 	a := 6*2
+// 	a++
+// 	var b bool = len("Hello, গো") == a
+// 	fmt.Println(b)
+// }
 
 // sl := make([]int, 3, 5)
 // sl[0]=5
