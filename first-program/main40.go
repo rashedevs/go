@@ -96,3 +96,12 @@ func main(){
 	b := calc()
 	fmt.Println(b)	 // just return types and output is 5
 }
+
+
+/*
+-- Defer uses Linked list but executes such like stack.
+-- Every defer nodes consist of a value and next portion.
+-- Defer info can be stored at both stack and heap. Most of the time at heap.
+-- Defer value info got binds with variable and function pointer if closure forms. 
+   Otherwise value and next. 
+*/
