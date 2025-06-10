@@ -58,24 +58,24 @@ func calculate() (result int){  // named return value
 */
 
 
-func calc() int{  
+// func calc() int{  
 
-	result := 0
-    fmt.Println("calc first", result)
+// 	result := 0
+//     fmt.Println("calc first", result)
 
-	show := func(){
-		result = result+10
-		fmt.Println("calc defer", result)
-	}
+// 	show := func(){
+// 		result = result+10
+// 		fmt.Println("calc defer", result)
+// 	}
    
-	defer show()
-	// defer fmt.Println("defer", result)
+// 	defer show()
+// 	// defer fmt.Println("defer", result)
 
-	result = 5
-	fmt.Println("calc second", result)
+// 	result = 5
+// 	fmt.Println("calc second", result)
 
-	return result
-}
+// 	return result
+// }
 
 /*
 --- rules for - just return types ---
@@ -93,8 +93,8 @@ func main(){
 	a := calculate()
 	fmt.Println(a)	// named return and output is 15
 
-	b := calc()
-	fmt.Println(b)	 // just return types and output is 5
+	// b := calc()
+	// fmt.Println(b)	 // just return types and output is 5
 }
 
 
