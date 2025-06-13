@@ -104,5 +104,6 @@ func main(){
 -- Defer info can be stored at both stack and heap. Most of the time at heap.
 -- Defer value info got binds with variable and function pointer if closure forms. 
    Otherwise value and next. 
--- Like if if we pass a value in fmt.Println, there will be no closure bind.   
+-- Like if if we pass a value in fmt.Println, there will be no closure bind.
+   But still the params value and next will be there at heap.
 */
