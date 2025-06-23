@@ -85,17 +85,17 @@ func calculate() (result int){  // named return value
 3. before return - before execute defers -> all return values at this current stage will be evaluated
    (did store the current return values)....
 4. all defer function will be execuded
-4. will return all named return variables values
+4. will return all return variables values
 
 */
 
-func main(){
-	a := calculate()
-	fmt.Println(a)	// named return and output is 15
+// func main(){
+// 	a := calculate()
+// 	fmt.Println(a)	// named return and output is 15
 
-	// b := calc()
-	// fmt.Println(b)	 // just return types and output is 5
-}
+// 	b := calc()
+// 	fmt.Println(b)	 // just return types and output is 5
+// }
 
 
 /*
