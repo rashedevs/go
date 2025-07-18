@@ -20,41 +20,19 @@ func printHello(num int){
 	// add(4,5)
 }
 
-func main(){
-    // var x int = 10
-	// fmt.Println("hello", x)
+func main() {
 
-	// go printHello(1)
+slc := []int{}
 
-	// go printHello(2)p[10]
+slc = append(slc, 10)
 
-	// go printHello(3)
+fmt.Print(cap(slc))
 
-	// go printHello(4)
+slc = append(slc, 13, 14)
 
-	// go printHello(5)
+fmt.Print(cap(slc))
 
-	// fmt.Println(a," ",pi)
+slc = append(slc, 16)
 
-	// time.Sleep(5*time.Second)
-
-    // fmt.Println("haha")
-
-	p := []int{1,2,3,4,5}
-	p = append(p, 6)
-	p = append(p, 7)
-	q := p[4:]
-	q = append(q, 11)
-	q = append(q, 12)
-	q = append(q, 13)
-	q = append(q, 14)
-
-fmt.Printf("ok %p",&p)
-fmt.Println(len(p))
-fmt.Println(q)
-fmt.Println(cap(q))
-fmt.Println(p)
-
-fmt.Printf("okp %p\n",&p)
-fmt.Printf("okq %p",&q)
+fmt.Print(cap(slc))
 }
